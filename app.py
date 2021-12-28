@@ -64,7 +64,7 @@ def login():
 
         user = [x for x in users if x[1] == username]
         if len(user)==0:
-            user=[(10,10,10)]
+            pass
         elif Hash.decode(user[0][2]) == password:
             return redirect('/welcome')
 
